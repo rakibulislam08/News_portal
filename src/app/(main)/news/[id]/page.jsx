@@ -1,11 +1,11 @@
 import React from 'react';
 
-const LogInPage = () => {
+const page = () => {
     return (
         <div>
-            Log In 
+            this is news page
         </div>
     );
 };
 
-export default LogInPage;
+export default page;
