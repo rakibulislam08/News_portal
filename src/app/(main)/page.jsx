@@ -1,4 +1,5 @@
 import LeftSideVar from "@/components/news/LeftSideVar";
+import RightSideVar from "@/components/news/RightSideVar";
 
 async function getCategories() {
   const res = await fetch("https://openapi.programming-hero.com/api/news/categories");
@@ -22,7 +23,9 @@ export default async function Home() {
        <LeftSideVar categories={categories} activeId={null}/>
       </div>
       <div className="bg-purple-500 col-span-6">All News</div>
-      <div className="bg-red-500 col-span-3">Social Icons</div>
+      <div className="col-span-3">
+        <RightSideVar />
+      </div>
     </div>
   );
 }
