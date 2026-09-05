@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { CiBookmark, CiShare2, CiStar } from 'react-icons/ci';
+import { CiBookmark, CiShare2 } from 'react-icons/ci';
 import { FaEye } from 'react-icons/fa';
 import { IoIosStar } from 'react-icons/io';
 
@@ -39,7 +39,7 @@ const NewsPages = ({ news }) => {
                             <h2 className='flex items-center gap-2'><FaEye />{news.total_view}</h2>
                         </div>
                         <Link href={`/news/${news._id}`}>
-                            <button className='btn '>See Details</button>
+                            <button className='btn bg-slate-300'>See Details</button>
                         </Link>
                     </div>
                 </div>
