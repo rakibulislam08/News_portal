@@ -9,14 +9,15 @@ const LeftSideVar = ({ categories, activeId }) => {
             <ul className="flex flex-col gap-5 ">
                 {
                     categories.news_category.map((category) => (
-                        <li className={`${activeId === category.category_id && "bg-purple-500 text-white"} bg-gray-300 p-2 rounded-md font-semibold
+                        <li className={`${activeId === category.category_id && "bg-purple-300 text-white"} bg-gray-300 p-2 rounded-md font-semibold
                          text-lg
                              `}
                             key={category.category_id} >
-                            <Link href={`{/category/${category.category_id}`} className='block'>   {category.category_name}
+                            <Link href={`/category/${category.category_id}`} className='block'>   {category.category_name}
                             </Link>
                         </li>
-                    ))}
+                    ))
+                }
             </ul>
         </div>
     );

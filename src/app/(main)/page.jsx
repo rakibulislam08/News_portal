@@ -1,31 +1,11 @@
-import LeftSideVar from "@/components/news/LeftSideVar";
-import RightSideVar from "@/components/news/RightSideVar";
+// import React from 'react';
 
-async function getCategories() {
-  const res = await fetch("https://openapi.programming-hero.com/api/news/categories");
+import { redirect } from "next/navigation";
 
-  // if (!res.ok) {
-  //   throw new Error("Failed to fetch categories");
-  // }
+const default_id = '01'
 
-  const data = await res.json();
-  return data.data;
-}
+const Home =async () => {
+ redirect(`/category/${default_id}`)
+};
 
-export default async function Home() {
-  const categories = await getCategories();
-  // console.log(categories.news_category);
-  
-
-  return (
-    <div className="container mx-auto grid grid-cols-12 mt-10 gap-4">
-      <div className="col-span-3 text-center">
-       <LeftSideVar categories={categories} activeId={null}/>
-      </div>
-      <div className="bg-purple-500 col-span-6">All News</div>
-      <div className="col-span-3">
-        <RightSideVar />
-      </div>
-    </div>
-  );
-}
+export default Home;
