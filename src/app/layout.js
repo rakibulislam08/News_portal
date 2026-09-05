@@ -8,6 +8,12 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
 });
 
+export const metadata = {
+  title: 'Daily News',
+  description: 'Best News Portal in Bangladesh',
+}
+
+// export default function Layout() {}/*  */
 
 export default function RootLayout({ children }) {
   return (
