@@ -19,7 +19,6 @@ export async function generateMetadata({ params }) {
     }
 }
 
-// export default function Page({ params, searchParams }) { }
 
 
 const NewsDetailsPage = async ({ params }) => {

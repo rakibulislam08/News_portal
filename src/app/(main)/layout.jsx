@@ -1,7 +1,7 @@
 
 import BreakingNews from '@/components/share/BreakingNews';
 import Header from '@/components/share/Header';
-import Navbar from '@/components/share/Navber';
+import Navbar from '@/components/share/Navbar';
 import React from 'react';
 
 const mainLayout = ({children}) => {

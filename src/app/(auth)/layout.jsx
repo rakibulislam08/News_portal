@@ -1,11 +1,11 @@
-import Navbar from '@/components/share/Navber';
+import Navbar from '@/components/share/Navbar';
 import React, { Children } from 'react';
 
-const authLayout = ({ Children }) => {
+const authLayout = ({ children }) => {
     return (
         <>
             <Navbar />
-            {Children}
+            {children}
         </>
     );
 };
